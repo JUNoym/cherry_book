@@ -18,3 +18,19 @@ culc_proc = Proc.new do |a, b|
   }
 end
 puts culc_proc.call(100, 200)
+result = culc_proc.call(100, 200).map do |key, value|
+  value
+end
+puts result
+
+
+# def make_counter
+#   count = 0
+#   Proc.new do 
+#     count += 1
+#   end
+# end
+
+# counter = make_counter
+# puts counter.call
+# puts counter.call
